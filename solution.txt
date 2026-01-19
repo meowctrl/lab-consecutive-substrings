@@ -1,2 +1,16 @@
 Please add your pseudocode to this file
 And a written explanation of your solution
+
+Our function for consecutive substrings takes the entered string, and loops through all the characters used within the string from start to end, forming more substrings from the individual characters.
+It works by starting from the first character inputted, and going down the list, adding the next character(s), until there is no more. Then you would start with the next character from the initial string and continue the same process.
+When all possible substrings are created, they will be put into an array of results at the end.
+
+An example of this process would be:
+
+Input: 'abc'
+Output: ['a', 'ab', 'abc', 'b', 'bc', 'c']
+
+Furthermore, my code works by taking the initial string as the input, and used a for loop nested within another for loop to give an output of all potential substrings from the initial input string.
+By having a beginning of the index (i) and an ending point (j), we can use string.length to represent the number of character in the initial string, and string.slice and + 1 to move through the characters.
+
+Again, since the function is a loop nested within a loop, the time complexity would be O(n^2).
